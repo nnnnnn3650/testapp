@@ -1,0 +1,31 @@
+New log file opened at Sat Jul 23 17:19:31 JST 2016 by 8483@hp-ubuntu
+Taking next connection to: 45693
+New client attempting to connect on port: 52716-45693
+  Address = /127.0.1.1:45693
+This client on port 52716 has uuid a71e631c-012c-4ae2-b26c-c59e85aa193e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-a71e631c-012c-4ae2-b26c-c59e85aa193e
+Taking next connection to: 45693
+New client attempting to connect on port: 52717-45693
+  Address = /127.0.1.1:45693
+Handshake exception on socket: 52717
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 45693
+New client attempting to connect on port: 52718-45693
+  Address = /127.0.1.1:45693
+This client on port 52718 has uuid 09fe0fe7-37a1-4f6a-986d-b45264f5c9b5 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-a71e631c-012c-4ae2-b26c-c59e85aa193e, activator-09fe0fe7-37a1-4f6a-986d-b45264f5c9b5
+Taking next connection to: 45693
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 8483@hp-ubuntu logs at Sat Jul 23 17:22:31 JST 2016, goodbye.
