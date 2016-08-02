@@ -17,5 +17,14 @@
      *@
 @*    play20.welcome(message, style = "Java")
 *@
-	@message
+
+    <script type='text/javascript' src='@routes.Assets.versioned("javascripts/index.js")'></script>
+
+    <ul id="persons"></ul>
+
+	<form action="@routes.HomeController.addPerson()" method="post">
+		<input type="text" name="name">
+        <input type="text" name="height">
+		<button>Add Person</button>
+	</form>
 }
